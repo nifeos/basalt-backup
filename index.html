@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>basalt rolling packages and sources</title>
+<style>
+  body { font: 1.125rem/1.6 system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 1rem; }
+  h1, h2 { line-height: 1.2; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.25rem 0; }
+  a { text-decoration: underline; }
+  .size { color: GrayText; }
+</style>
+</head>
+<body>
+<main>
+<h1>basalt rolling packages and sources</h1>
+
+<section aria-labelledby="what">
+<h2 id="what">What this is</h2>
+<p>
+  This site holds the rolling backup of the packages, and the sources they are built from, that
+  make up basalt, the first-party distribution of the nife operating system. Each time basalt
+  publishes, it puts these files here, and the same files at its second address. The package index
+  is the one a nife system reads when it installs packages, and the copy of each package here is
+  the one tried when the primary location cannot be reached.
+</p>
+<p>
+  Only the newest build is kept here. Older versions stay on basalt's
+  <a href="https://github.com/nifeos/basalt/releases">releases</a>.
+</p>
+<p>This is a backup of <code>basalt.nifeos.org</code>, which is the address to use. This copy is for when that one cannot be reached.</p>
+</section>
+
+<section aria-labelledby="files">
+<h2 id="files">What is here</h2>
+<h3 id="metadata">Metadata</h3>
+<p>The index lists each package with its SHA-256 digest and where to download it.</p>
+<ul aria-label="metadata">
+  <li><a href="rolling/metadata/stand-in-index">stand-in-index</a> <span class="size">(3.2 KiB)</span></li>
+</ul>
+<h3 id="sources">Sources</h3>
+<p>The exact files and patches each package was built from.</p>
+<ul aria-label="sources">
+  <li><a href="rolling/sources/demos-0.1.0-source.tar.gz">demos-0.1.0-source.tar.gz</a> <span class="size">(15.8 KiB)</span></li>
+  <li><a href="rolling/sources/hackbench-2.11-source.tar.gz">hackbench-2.11-source.tar.gz</a> <span class="size">(27.0 KiB)</span></li>
+  <li><a href="rolling/sources/ioping-1.3-source.tar.gz">ioping-1.3-source.tar.gz</a> <span class="size">(38.9 KiB)</span></li>
+  <li><a href="rolling/sources/ripgrep-14.1.1-source.tar.gz">ripgrep-14.1.1-source.tar.gz</a> <span class="size">(281.6 KiB)</span></li>
+  <li><a href="rolling/sources/sqlite-3.50.4-source.tar.gz">sqlite-3.50.4-source.tar.gz</a> <span class="size">(2.8 MiB)</span></li>
+</ul>
+<h3 id="targets">Packages</h3>
+<p>One package for each program and each architecture.</p>
+<ul aria-label="targets">
+  <li><a href="rolling/targets/demos-0.1.0-aarch64.nifepkg">demos-0.1.0-aarch64.nifepkg</a> <span class="size">(80.8 KiB)</span></li>
+  <li><a href="rolling/targets/demos-0.1.0-riscv64.nifepkg">demos-0.1.0-riscv64.nifepkg</a> <span class="size">(20.9 KiB)</span></li>
+  <li><a href="rolling/targets/demos-0.1.0-x86_64.nifepkg">demos-0.1.0-x86_64.nifepkg</a> <span class="size">(20.8 KiB)</span></li>
+  <li><a href="rolling/targets/hackbench-2.11-aarch64.nifepkg">hackbench-2.11-aarch64.nifepkg</a> <span class="size">(272.0 KiB)</span></li>
+  <li><a href="rolling/targets/hackbench-2.11-riscv64.nifepkg">hackbench-2.11-riscv64.nifepkg</a> <span class="size">(199.6 KiB)</span></li>
+  <li><a href="rolling/targets/hackbench-2.11-x86_64.nifepkg">hackbench-2.11-x86_64.nifepkg</a> <span class="size">(200.0 KiB)</span></li>
+  <li><a href="rolling/targets/ioping-1.3-aarch64.nifepkg">ioping-1.3-aarch64.nifepkg</a> <span class="size">(430.1 KiB)</span></li>
+  <li><a href="rolling/targets/ioping-1.3-riscv64.nifepkg">ioping-1.3-riscv64.nifepkg</a> <span class="size">(356.6 KiB)</span></li>
+  <li><a href="rolling/targets/ioping-1.3-x86_64.nifepkg">ioping-1.3-x86_64.nifepkg</a> <span class="size">(362.1 KiB)</span></li>
+  <li><a href="rolling/targets/ripgrep-14.1.1-aarch64.nifepkg">ripgrep-14.1.1-aarch64.nifepkg</a> <span class="size">(2.9 MiB)</span></li>
+  <li><a href="rolling/targets/ripgrep-14.1.1-riscv64.nifepkg">ripgrep-14.1.1-riscv64.nifepkg</a> <span class="size">(2.7 MiB)</span></li>
+  <li><a href="rolling/targets/ripgrep-14.1.1-x86_64.nifepkg">ripgrep-14.1.1-x86_64.nifepkg</a> <span class="size">(2.8 MiB)</span></li>
+  <li><a href="rolling/targets/sqlite-3.50.4-aarch64.nifepkg">sqlite-3.50.4-aarch64.nifepkg</a> <span class="size">(1.4 MiB)</span></li>
+  <li><a href="rolling/targets/sqlite-3.50.4-riscv64.nifepkg">sqlite-3.50.4-riscv64.nifepkg</a> <span class="size">(1.1 MiB)</span></li>
+  <li><a href="rolling/targets/sqlite-3.50.4-x86_64.nifepkg">sqlite-3.50.4-x86_64.nifepkg</a> <span class="size">(1.3 MiB)</span></li>
+</ul>
+</section>
+
+<!-- Later sections, for example one about the distribution, go here as further <section> elements. -->
+</main>
+</body>
+</html>
